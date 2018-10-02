@@ -3,9 +3,9 @@ namespace MyFortnite
 {
     public class FNPlayer
     {
- 		public string equipedWeapon;
-        public  double hitPoints;
-        public double shield;
+ 		private string equipedWeapon;
+        private  double hitPoints;
+        private double shield;
 
         public FNPlayer()
         {
@@ -29,7 +29,10 @@ namespace MyFortnite
 
         public void SetShield(double shield)
         {
-            this.shield = shield;
+            if (shield >= 0)
+            {
+                this.shield = shield;
+            }
         }
 
         public void Attack(FNPlayer enemy)
