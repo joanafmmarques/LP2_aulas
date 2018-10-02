@@ -18,6 +18,8 @@ namespace MyFortnite
             Console.WriteLine("P1 shield before: " + player1.GetShield());
             player1.SetShield(50);
             Console.WriteLine("P1 shield after: " + player1.GetShield());
+
+            FNPlayer.MaxHitPoints = 50;
         }
     }
 }

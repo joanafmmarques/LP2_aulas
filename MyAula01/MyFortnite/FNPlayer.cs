@@ -7,6 +7,13 @@ namespace MyFortnite
         private  double hitPoints;
         private double shield;
 
+        public static double MaxHitPoints { get; set; } = 100;
+
+        public static void Apocalipse() 
+        {
+            MaxHitPoints /= 2;
+        }
+
         public FNPlayer()
         {
             equipedWeapon = "picareta";
