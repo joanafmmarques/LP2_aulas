@@ -3,9 +3,24 @@ namespace MyFortnite
 {
     public class FNPlayer
     {
- 		string equipedWeapon;
-        double hitPoints;
-        double shield;
+ 		public string equipedWeapon;
+        public  double hitPoints;
+        public double shield;
+
+        public FNPlayer()
+        {
+            equipedWeapon = "picareta";
+            hitPoints = 100;
+            shield = 0;
+
+        }
+
+        public FNPlayer(string equipedWeapon, double hitPoints, double shield)
+        {
+            this.equipedWeapon = equipedWeapon;
+            this.hitPoints = hitPoints;
+            this.shield = shield;
+        }
 
         public void Attack(FNPlayer enemy)
         {
@@ -26,7 +41,7 @@ namespace MyFortnite
                 hitPoints -= damage;
                 if (hitPoints <= 0)
                 {
-                    Die();
+                  //  Die();
                 }
             }
         }
