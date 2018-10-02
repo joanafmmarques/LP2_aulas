@@ -22,6 +22,16 @@ namespace MyFortnite
             this.shield = shield;
         }
 
+        public double GetShield()
+        {
+            return shield;
+        }
+
+        public void SetShield(double shield)
+        {
+            this.shield = shield;
+        }
+
         public void Attack(FNPlayer enemy)
         {
             enemy.TakeDamage(10);
